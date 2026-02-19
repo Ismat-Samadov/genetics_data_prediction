@@ -1,8 +1,49 @@
-Gene Expression Analysis Summary
-===============================
-Genes: 7129
-Training samples: 38
-Test samples: 34
-Train class counts: {'ALL': 27, 'AML': 11}
-Test class counts: {'ALL': 20, 'AML': 14}
-FDR < 0.05 genes: 535
+ACUTE LEUKEMIA GENE EXPRESSION ANALYSIS -- SUMMARY
+===================================================
+Dataset: Golub et al. (1999) ALL/AML Classification Study
+Platform: Affymetrix HG-U95Av2 Microarray
+Analysis Date: 2026-02-19
+
+COHORT COMPOSITION
+------------------
+Total Patients     : 72
+  ALL              : 47 (65.3%)
+  AML              : 25 (34.7%)
+Training Cohort    : 38 patients
+Independent Test   : 34 patients
+
+DIFFERENTIAL EXPRESSION (Welch's t-test, BH-FDR)
+--------------------------------------------------
+Total Genes Profiled: 7,129
+FDR < 0.05: 1,047 genes
+  ALL upregulated : 684
+  AML upregulated : 363
+FDR < 0.01: 499 genes
+
+TOP 10 ALL-UPREGULATED GENES
+-----------------------------
+                                                                                                                                                                                                                                                                gene  cohen_d          fdr   log2FC
+                                                                                                                                                                                                                                                          RBQ-1 mRNA 1.679040 2.109345e-08 0.796518
+Description: orf3 gene extracted from region centromeric to t(12;17) brakepoint: orf1/unknown 43 amino acid transcript...orf3/unknown 50 amino acid transcript [human; testis; acampomelic campomelic dysplasia and sex reversal patient; Genomic; 3 genes; 3414 nt] 1.644070 2.292924e-08 0.855600
+                                                                                                                                                                                                               Clone CIITA-10 MHC class II transactivator CIITA mRNA 1.553261 8.424528e-08 1.053238
+                                                                                                                                                                                                                               PRSS1 Protease; serine; 1 (trypsin 1) 1.539078 8.424528e-08 0.403022
+                                                                                                                                        GBE1 Glucan (1;4-alpha-); branching enzyme 1 (glycogen branching enzyme; Andersen disease; glycogen storage disease type IV) 1.514136 1.198614e-07 0.260276
+                                                                                                                                                                                                                                Zinc Finger Protein Znf81 (Gb:X0729) 1.487555 2.916629e-07 0.622668
+                                                                                                                                                                                                 Clone pSK1 interferon gamma receptor accessory factor-1 (AF-1) mRNA 1.480330 2.413380e-07 0.128103
+                                                                                                                                                                                   SNT1 Syntrophin; alpha (dystrophin-associated protein A1; 59kD; acidic component) 1.463495 2.916629e-07 0.676005
+                                                                                                                                                                                                                       TP53 Tumor protein p53 (Li-Fraumeni syndrome) 1.462927 2.413380e-07 1.105710
+                                                                                                                                        GB DEF = MESI3/15=extracellular matrix induced gene [human; endometrial adenocarcinoma cells HEC1B(L); mRNA Partial; 453 nt] 1.451704 2.413380e-07 0.763002
+
+TOP 10 AML-UPREGULATED GENES
+-----------------------------
+                                                                                  gene   cohen_d      fdr    log2FC
+                                                Dihydrofolate Reductase; Alt. Splice 6 -2.755350 0.000002 -0.881141
+        HLON ATP-dependent protease mRNA; nuclear gene encoding  mitochondrial protein -2.269194 0.000001 -0.997733
+                                                                       SYNAPTOBREVIN 1 -2.267749 0.000068 -0.280663
+                                                                                  Nrf2 -2.162900 0.000142 -1.480879
+                                             GB DEF = Histatin 3 (HIS2) gene exons 3-5 -2.125702 0.000039 -0.672683
+                                                             CA6 Carbonic anhydrase VI -2.103547 0.000187 -1.902862
+                               Branched-chain amino acid aminotransferase (ECA40) mRNA -2.102731 0.000004 -0.453430
+                    ITGA2 Integrin; alpha 2 (CD49B; alpha 2 subunit of VLA-2 receptor) -2.090268 0.000089 -0.420012
+RALB V-ral simian leukemia viral oncogene homolog B (ras related; GTP binding protein) -2.033834 0.000094 -0.465569
+                                                                  PBX1 PBX1a and PBX1b -2.028956 0.000177 -0.871224
