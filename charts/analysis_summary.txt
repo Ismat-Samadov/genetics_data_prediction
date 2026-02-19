@@ -1,0 +1,8 @@
+Gene Expression Analysis Summary
+===============================
+Genes: 7129
+Training samples: 38
+Test samples: 34
+Train class counts: {'ALL': 27, 'AML': 11}
+Test class counts: {'ALL': 20, 'AML': 14}
+FDR < 0.05 genes: 535
